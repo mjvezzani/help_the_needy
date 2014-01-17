@@ -1,0 +1,17 @@
+Todo for Jan 14:
+
+= Oil
+= Laundry
+= Clean house
+= Coding
+	- Write tests for models
+	|__Get tests to pass
+	- Write tests for controllers
+	|__Get tests to pass
+	- Prettify views
+
+	* By end of day, get a working site that is navigable
+		through each of the different areas. 
+		|__ Bonus if I can filter each needy_person so that
+				only individuals belonging to elders quorum show
+				up on the EQ list, RS on RS, bishopric on bishopric

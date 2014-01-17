@@ -1,0 +1,35 @@
+<h1>Listing needy_people</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Address</th>
+      <th>Comments</th>
+      <th>Organization</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @needy_people.each do |needy_person| %>
+      <tr>
+        <td><%= needy_person.name %></td>
+        <td><%= needy_person.age %></td>
+        <td><%= needy_person.address %></td>
+        <td><%= needy_person.comments %></td>
+        <td><%= needy_person.organization %></td>
+        <td><%= link_to 'Show', needy_person %></td>
+        <td><%= link_to 'Edit', edit_needy_person_path(needy_person) %></td>
+        <td><%= link_to 'Destroy', needy_person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Needy person', new_needy_person_path, :class => "button" %>

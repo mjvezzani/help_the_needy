@@ -1,0 +1,18 @@
+<nav class="top-bar" data-topbar>
+	<ul class="title-area">
+		<li class="name">
+			<h1><%= link_to "Boston 1st Ward", static_pages_index_path %></h1>
+		</li>
+		<li class="toggle-topbar menu-icon"><%= link_to "Menu" %></li>
+	</ul>
+
+	<section class="top-bar-section">
+
+		<ul class="left">
+			<li><%= link_to "Bishopric", bishopric_index_path, :class => yield(:class) %></li>	
+			<li><%= link_to "Relief Society", relief_society_index_path %></li>
+			<li><%= link_to "Elders Quorum", elders_quorum_index_path %></li>
+			<li><%= link_to "All People in Need", static_pages_needy_people_path %></li>
+		</ul>
+	</section>
+</nav>

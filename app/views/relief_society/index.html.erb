@@ -1,0 +1,29 @@
+<% provide(:title, "Boston 1st Ward | RS" %>
+
+<h2>People for Relief Society to focus on</h2>
+<div class="row">
+	<div class="large-12 columns">
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Age</th>
+					<th>Address</th>
+					<th>Comments</th>
+					<th>Organization</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% for np in @rs_needy_people %>
+				<tr>
+					<th><%= np.name %></th>
+					<th><%= np.age %></th>
+					<th><%= np.address %></th>
+					<th><%= np.comments %></th>
+					<th><%= np.organization %></th>
+				</tr>
+				<% end %>
+			</tbody>
+		</table>
+	</div>
+</div>

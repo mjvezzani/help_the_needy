@@ -1,0 +1,2 @@
+module EldersQuorumHelper
+end
